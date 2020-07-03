@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+	font-family: monospace;
+	font-size: 11px;
+	color: white;
+}
+body {
+	background-color: black;
+	margin: 0;
+}
+body,
+html {
+	height: 100%;
+	width: 100%;
+}
+#canvas {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	max-width: 100%;
+	height: 500px;
+	border: 1px dashed white;
+	color: white;
+	overflow: hidden;
+}
+#canvas:hover {
+	cursor: none;
+}
+.player {
+	position: absolute;
+	white-space: pre;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%, -50%);
+}
+.bullet,
+.meteor {
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+.meteor {
+	white-space: pre;
+	transform-origin: center center;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	padding: 50px;
+	width: 100%;
+	font-size: 12px;
+}
